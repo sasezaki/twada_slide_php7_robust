@@ -1,7 +1,7 @@
 <?php
 use App\BugRepository;
 
-require_once __DIR__ . '/../src/slide4.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 print_r(BugRepository::findAll([
     'assignedTo' => '12',

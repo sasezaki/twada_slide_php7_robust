@@ -9,7 +9,8 @@ use PDO;
 class BugRepository
 {
     /**
-     * @param array $params
+     * @param array<string, string> $params
+     *
      * @return Bug[]
      */
     public static function findAll(array $params) : array

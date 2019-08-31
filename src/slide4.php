@@ -7,7 +7,7 @@ use App\Bug;
 
 class BugRepository
 {
-    public static function findAll($params)
+    public static function findAll(array $params) : array
     {
         global $CONF;
         $pdo = new PDO($CONF['dsn'], $CONF['usr'], $CONF['passwd'], [ PDO::ATTR_EMULATE_PREPARES => false]);

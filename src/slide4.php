@@ -1,4 +1,5 @@
 <?php
+namespace App;
 
 class BugRepository
 {
@@ -15,7 +16,3 @@ class BugRepository
     }
 }
 
-print_r(BugRepository::findAll([
-    'assignedTo' => '12',
-    'status' => 'OPEN'
-]));

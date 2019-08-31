@@ -1,4 +1,5 @@
 <?php
+
 namespace App;
 
 use PDO;
@@ -18,4 +19,3 @@ class BugRepository
         return $stmt->fetchAll(PDO::FETCH_CLASS, Bug::class);
     }
 }
-

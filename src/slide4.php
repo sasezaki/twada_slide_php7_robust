@@ -1,6 +1,9 @@
 <?php
 namespace App;
 
+use PDO;
+use App\Bug;
+
 class BugRepository
 {
     public static function findAll($params)

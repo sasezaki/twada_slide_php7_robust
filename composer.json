@@ -1,7 +1,8 @@
 {
     "autoload": {
         "classmap": [
-            "src/slide4.php"
+            "src/slide4.php",
+            "src/Bug.php"
         ]
     },
     "require-dev": {

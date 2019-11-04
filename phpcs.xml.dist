@@ -7,7 +7,7 @@
     <description>Check the code of the sniffs.</description>
     <rule ref="vendor/squizlabs/php_codesniffer/src/Standards/PSR2/ruleset.xml" />
 
-    <config name="installed_paths" value="../../slevomat/coding-standard"/>
+    <config name="installed_paths" value="../../slevomat/coding-standard,../../struggle-for-php/sfp-coding-standard"/>
     <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
         <properties>
             <property name="rootNamespaces" type="array">
@@ -16,6 +16,14 @@
         </properties>
     </rule>
     <rule ref="vendor/doctrine/coding-standard/lib/Doctrine/ruleset.xml" />
+
+    <rule ref="SfpCodingStandard.Di.ForbiddenInstantiation">
+        <properties>
+            <property name="forbiddenInstantiations" type="array">
+                <element key="App\\PdoFactory" value="PDO"/>
+            </property>
+        </properties>
+    </rule>
 
     <arg name="basepath" value="."/>
     <arg name="extensions" value="php"/>

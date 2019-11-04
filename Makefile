@@ -1,6 +1,6 @@
-.PHONY: cs phpstan
+.PHONY: cs phpstan psalm
 
-all: cs phpstan
+all: cs phpstan psalm
 
 cs:
 	./vendor/bin/phpcs
@@ -8,3 +8,5 @@ cs:
 phpstan:
 	./vendor/bin/phpstan analyse --level=2 src public
 
+psalm:
+	./vendor/bin/psalm

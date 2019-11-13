@@ -15,7 +15,15 @@
             </property>
         </properties>
     </rule>
-    <rule ref="vendor/doctrine/coding-standard/lib/Doctrine/ruleset.xml" />
+
+    <!-- override Doctrine Ruleset annotation allows -->
+    <rule ref="vendor/doctrine/coding-standard/lib/Doctrine/ruleset.xml">
+        <properties>
+            <property name="annotationsGroups" type="array">
+                <element value="@var,@param,@return,@psalm-suppress" />
+            </property>
+        </properties>
+    </rule>
 
     <rule ref="SfpCodingStandard.Di.ForbiddenInstantiation">
         <properties>

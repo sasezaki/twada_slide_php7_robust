@@ -18,8 +18,8 @@ class BugRepository
 
     /**
      * @param array<string, string> $params
-     *
      * @return array<Bug>
+     * @psalm-suppress MixedReturnTypeCoercion
      */
     public function findAll(array $params) : array
     {

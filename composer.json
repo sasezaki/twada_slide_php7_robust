@@ -7,19 +7,19 @@
         }
     },
     "require" : {
-        "php" : ">=7.2.0",
+        "php" : ">=7.4.0",
         "ext-pdo": "*"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.5",
-        "phpstan/phpstan": "^0.11.15",
+        "phpstan/phpstan": "^0.12",
         "phpstan/extension-installer": "^1.0",
-        "phpstan/phpstan-strict-rules": "^0.11.1",
+        "phpstan/phpstan-strict-rules": "^0.12",
         "slevomat/coding-standard": "5.0.5",
         "doctrine/coding-standard": "^6.0",
         "vimeo/psalm": "^3.4",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-        "struggle-for-php/sfp-coding-standard": "0.1.1"
+        "struggle-for-php/sfp-phpstan-pdo": "^0.0.1"
     },
     "repositories": [
         {

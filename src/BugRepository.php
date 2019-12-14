@@ -27,8 +27,14 @@ class BugRepository
         $sql  = 'SELECT bug_id, summary, date_reported FROM Bugs
             WHERE assigned_to = :assignedTo AND status = :status';
         $stmt = $pdo->prepare($sql);
-        $stmt->execute($params);
+        $stmt->execute();
 
-        return $stmt->fetchAll(PDO::FETCH_CLASS, Bug::class);
+        $bugs = $stmt->fetchAll(PDO::FETCH_CLASS, 'Bug');
+        $return = [];
+        foreach ($bugs as $bug) {
+            $return[] = $bug->fooo;
+        }
+
+        return $return;
     }
 }

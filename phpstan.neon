@@ -1,0 +1,5 @@
+services:
+	-
+		class: Sfp\PHPStan\PDO\PDOStatementFetchAllReturnTypeExtension
+		tags:
+			- phpstan.broker.dynamicMethodReturnTypeExtension

@@ -6,4 +6,9 @@ namespace App;
 
 class Bug
 {
+    /** @var string */
+    public $title;
+
+    /** @var string */
+    public $body;
 }

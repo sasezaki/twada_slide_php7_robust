@@ -19,7 +19,7 @@
         "doctrine/coding-standard": "^6.0",
         "vimeo/psalm": "^3.4",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-        "struggle-for-php/sfp-phpstan-pdo": "^0.0.1"
+        "struggle-for-php/sfp-phpstan-pdo": "dev-fetch_style"
     },
     "repositories": [
         {

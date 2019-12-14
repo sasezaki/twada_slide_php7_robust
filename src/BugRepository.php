@@ -29,7 +29,7 @@ class BugRepository
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
 
-        $bugs = $stmt->fetchAll(PDO::FETCH_CLASS, 'Bug');
+        $bugs = $stmt->fetchAll(PDO::FETCH_CLASS, 'App\Bug');
         $return = [];
         foreach ($bugs as $bug) {
             $return[] = $bug->fooo;
